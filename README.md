@@ -72,5 +72,6 @@ Best practice is to use the styling capabilities in the Elementor plugin.
 * New: translations support.
 * Changed: re-write of already existing template parts.
 
-### 1.1.1 - 2019-01-28 ###
+### 1.1.1 - 2019-02-13 ###
 * Tweak: remove lists padding reset.
+* Fix: add img default sizing (#5949)
