@@ -29,7 +29,6 @@ if ( ! function_exists( 'hello_elementor_setup' ) ) {
 			add_theme_support( 'post-thumbnails' );
 			add_theme_support( 'automatic-feed-links' );
 			add_theme_support( 'title-tag' );
-			add_theme_support( 'custom-logo' );
 			add_theme_support( 'html5', array(
 				'search-form',
 				'comment-form',
@@ -73,7 +72,7 @@ add_action( 'after_setup_theme', 'hello_elementor_setup' );
  */
 if ( ! function_exists( 'hello_elementor_scripts_styles' ) ) {
 	function hello_elementor_scripts_styles() {
-		if ( apply_filters( 'elementor_hello_theme_enqueue_style', true ) ) {
+		if ( apply_filters( 'hello_elementor_enqueue_style', true ) ) {
 			wp_enqueue_style( 'hello-elementor-theme-style', get_stylesheet_uri() );
 		}
 	}
